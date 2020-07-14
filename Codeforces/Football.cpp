@@ -1,7 +1,7 @@
 //  Time Complexity: 0(n)
 //  Auxilary Space: 0(1)
 
-//Another Simple solution  0(1) (Using fin)
+//Another Simple solution  0(1) (Using find): Implementation at the end
 #include <bits/stdc++.h>
 
 #define MOD 1000000007
@@ -77,13 +77,15 @@ int main()
     return 0;
 }
 
-string str = "1000000001";
-string str1 = "0000000";
-string str2 = "1111111";
+// Using STL find
 
-// Find first occurrence of "geeks"
-int found1 = str.find(str1);
-int found2 = str.find(str2);
+// string str1 = "0000000";
+// string str2 = "1111111";
 
-cout << found1 << endl
-     << found2;
+// // Find first occurrence of "geeks"
+// int found1 = str.find(str1);
+// int found2 = str.find(str2);
+
+// cout << found1 << endl
+//      << found2;
+// }
