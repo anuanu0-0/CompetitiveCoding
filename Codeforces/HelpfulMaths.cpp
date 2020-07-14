@@ -1,3 +1,4 @@
+//  Time Complexity : 0(nlogn)
 #include <bits/stdc++.h>
 
 #define test  \
@@ -61,3 +62,36 @@ int main()
 
     return 0;
 }
+
+// 0(n) Solution
+/*
+int c1 = 0, c2 = 0, c3 = 0;
+for(int i=0; i<str.length(); i++) {
+    if(str[i] == '1')
+        c1++;
+    else if (str[i] == '2')
+        c2++;
+    else if(str[i] == '3)
+        c3++;
+}
+while(c1+c2+c3 > 0) {
+
+    if(c1 > 0) {
+        cout<<"1";
+        c1--;
+    }
+    else if(c2 >0) {
+         cout << "2";
+         c2--;
+        
+    }
+    else {
+      
+           cout << "3";
+        c3--;
+    }
+    if(c3!=0) 
+        cout<<"+";
+    
+}
+*/
