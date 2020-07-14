@@ -1,4 +1,4 @@
-//  Time Complexity : 0(nlogn)
+//  Time Complexity : 0(nlogn) Using sorting & 0(n) solution (Without sorting, at last)
 #include <bits/stdc++.h>
 
 #define test  \
@@ -75,19 +75,16 @@ for(int i=0; i<str.length(); i++) {
         c3++;
 }
 while(c1+c2+c3 > 0) {
-
     if(c1 > 0) {
         cout<<"1";
         c1--;
     }
     else if(c2 >0) {
-         cout << "2";
-         c2--;
-        
+        cout << "2";
+        c2--;        
     }
     else {
-      
-           cout << "3";
+        cout << "3";
         c3--;
     }
     if(c3!=0) 
