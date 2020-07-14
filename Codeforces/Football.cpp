@@ -78,7 +78,7 @@ int main()
 }
 
 // Using STL find
-
+// -----------------
 // string str1 = "0000000";
 // string str2 = "1111111";
 
