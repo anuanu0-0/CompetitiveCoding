@@ -1,4 +1,5 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#include <vector>
 #include <unordered_set>
 #define MOD 1000000007
 #define test  \
@@ -18,13 +19,12 @@
 #define ld long double
 using namespace std;
 
-void solve()
-{
-}
-
 int main()
 {
+    FAST
+        test
+    {
+        }
 
-    solve();
     return 0;
 }
