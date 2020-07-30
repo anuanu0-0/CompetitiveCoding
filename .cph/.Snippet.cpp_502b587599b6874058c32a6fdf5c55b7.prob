@@ -1,1 +1,0 @@
-{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: Snippet","srcPath":"c:\\Users\\saura\\Repo\\CompetitiveCoding\\Snippet.cpp","tests":[{"id":1594827618146,"input":"2\n5\n1 2 5 4 3\n1\n72\n5\n1 2 5 4 3\n1\n7","output":""}],"timeLimit":3000,"url":"c:\\Users\\saura\\Repo\\CompetitiveCoding\\Snippet.cpp"}
