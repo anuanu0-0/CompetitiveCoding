@@ -39,8 +39,6 @@
 #define ld long double
 using namespace std;
 
-int mat[8][8];
-
 int main()
 {
   FAST
