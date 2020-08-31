@@ -1,6 +1,6 @@
+//  Time Complexity : 0(nlogn) Using sorting & 0(n) solution (Without sorting, at last)
 #include <bits/stdc++.h>
 
-#define MOD 1000000007
 #define test  \
     int t;    \
     cin >> t; \
@@ -43,14 +43,42 @@ using namespace std;
 
 int main()
 {
-    string str = "";
-    cin >> str;
-    int decimal = int(str[0]);
-    if (decimal > 96 && decimal < 123)
-    {
-        decimal = decimal - 32;
-        str[0] = char(decimal);
+    FAST
+    ll t;
+    cin >> t;
+    while(t--) {
+      ll tcap, cap1, cap2, cn1, cn2, s, w, res=0;
+      cin >>cap1>>cap2>>cn1>>cn2>>s>>w;
+      tcap = cap1 + cap2;
+
+
+      // MIN & max
+      if(s>w) {
+        swap(s, w);
+        swap(cn1, cn2);
+      }
+
+
+      if(tcap/s >= cn1) {
+        res += cn1;
+        tcap = tcap-s*cn1;
+        //  Now check for axex
+        if(tcap/w >= cn2) {
+          res += cn2;
+        }
+        else {
+          res += tcap/cn2;
+        }
+      }
+      else {
+        // Don't need to check for axes
+        res += tcap/w;
+      }
+
+
+      cout << res << '\n';
     }
-    cout << str;
+
+
     return 0;
 }

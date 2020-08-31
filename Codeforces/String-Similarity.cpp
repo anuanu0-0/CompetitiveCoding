@@ -1,6 +1,6 @@
+//  Time Complexity : 0(nlogn) Using sorting & 0(n) solution (Without sorting, at last)
 #include <bits/stdc++.h>
 
-#define MOD 1000000007
 #define test  \
     int t;    \
     cin >> t; \
@@ -43,14 +43,21 @@ using namespace std;
 
 int main()
 {
-    string str = "";
-    cin >> str;
-    int decimal = int(str[0]);
-    if (decimal > 96 && decimal < 123)
-    {
-        decimal = decimal - 32;
-        str[0] = char(decimal);
+    FAST
+    int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        string s, ans;
+        cin >> s;
+        for(int i=0; i<(int)s.length(); ){
+          ans += s[i];
+          i+=2;
+        }
+        cout << ans <<'\n';
     }
-    cout << str;
+
+
     return 0;
 }

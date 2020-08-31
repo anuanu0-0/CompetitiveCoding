@@ -6,7 +6,8 @@
     while (t--)
 #define F first
 #define S second
-
+typedef long long LL;
+#define endl '\n'
 #define FAST                          \
     ios_base::sync_with_stdio(false); \
     cin.tie();                        \
@@ -19,22 +20,23 @@ using namespace std;
 
 int main()
 {
-    FAST int n, t, count = 0;
-    cin >> n >> t;
-    char s[51];
-    cin >> s;
-    while (t--)
+    FAST int n, m;
+    cin >> n >> m;
+    vector<int> v(m);
+    for (int i = 0; i < m; i++)
+        cin >> v[i];
+    LL ctime = 0;
+    int pos = 1;
+    for (int i = 0; i < m; i++)
     {
-        for (int i = 0; i < n - 1; i++)
-        { 
-            if (s[i] == 'B' && s[i + 1] == 'G')
-            {
-                swap(s[i], s[i + 1]);
-                i++;
-            }
-        }
+        if (v[i] >= pos)
+            ctime += v[i] - pos;
+        else
+            ctime += n - pos + v[i];
+
+        pos = v[i];
     }
-    cout << s << endl;
+    cout << ctime << endl;
 
     return 0;
 }
